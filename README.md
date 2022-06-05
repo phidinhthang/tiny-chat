@@ -1,5 +1,7 @@
 ## Demo: [https://tinychat.pages.dev](https://tinychat.pages.dev/)
 
+### ⚠️ Warning: Don't test this project in mobile because slate.js with throw error when it try to parse emoji, mention in chat input -> Make the app crash. Also responsive ui look weird. Please open the app in desktop browser only. 🥺🥺 
+
 ## Technologies
 
 ### Frontend
