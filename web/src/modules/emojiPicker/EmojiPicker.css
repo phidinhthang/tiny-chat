@@ -1,0 +1,121 @@
+.emoji-picker-wrapper {
+  border: 1px solid #e5e5e5;
+}
+
+.emoji-picker-search {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px;
+}
+
+.emoji-picker-search input {
+  outline: none;
+  background-color: #eee;
+  width: 100%;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.emoji-picker {
+  display: flex;
+  border-radius: 3px;
+  background: white;
+  contain: content;
+  align-items: stretch;
+}
+
+.emoji-picker .emoji-picker-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.emoji-picker .emoji-picker-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.emoji-picker .emoji-picker-scroll .emoji-picker-category-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18x;
+  color: #a3a3a3;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.emoji-picker .emoji-picker-scroll .emoji-picker-category-emoji {
+  padding: 0 0.5em;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+}
+
+.emoji-picker .emoji-picker-emoji {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 4px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  box-sizing: content-box;
+}
+
+.emoji-picker .emoji-picker-emoji-focused,
+.emoji-picker .emoji-picker-scroll .emoji-picker-emoji:hover,
+.emoji-picker .emoji-picker-navbar .emoji-picker-emoji:hover {
+  background: #e5e5e5;
+}
+
+.emoji-picker .emoji-picker-category-emoji > li:active .emoji-picker-emoji {
+  background: #d4d4d4;
+}
+
+.emoji-picker .emoji-picker-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: 1px solid #e5e5e5;
+  padding: 1em 9px;
+}
+
+.emoji-picker .emoji-picker-navbar .emoji-picker-navbar-category {
+  appearance: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 36px;
+}
+
+.emoji-picker .emoji-picker-footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  user-select: none;
+}
+
+.emoji-picker .emoji-picker-footer .emoji-picker-emoji {
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
+  cursor: inherit;
+}
+
+.emoji-picker .emoji-picker-footer .emoji-picker-emoji:active {
+  background: inherit !important;
+}
+
+.emoji-picker .emoji-picker-footer .emoji-picker-name {
+  text-align: left;
+  padding: 0 0.25em;
+}

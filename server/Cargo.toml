@@ -1,0 +1,33 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt = "2.7.0"
+actix-web = "4"
+actix-web-actors = "4.1.0"
+actix = "0.13.0"
+actix-cors = "0.6.1"
+diesel = { version = "1.4.4", features = ["postgres", "r2d2", "uuidv07", "chrono", "serde_json"] }
+dotenv = "0.15.0"
+serde = { version = "1.0.117", features = ["derive"] }
+serde_json = "1.0.59"
+r2d2 = "0.8.9"
+uuid = { version = "0.8.2", features = ["v4", "serde"] }
+jsonwebtoken = "8.1.0"
+rand = "0.8.5"
+rust-argon2 = "1.0.0"
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+futures = "0.3.21"
+oauth2 = { version = "4.2.0" }
+tokio = "1.18.2"
+url = "2.2.2"
+http = "0.2.7"
+reqwest = { version = "0.11.10", features = ["json"] }
+urlencoding = "2.1.0"
+sha1 = "0.10.0"
+diesel_migrations = "1.4.0"
