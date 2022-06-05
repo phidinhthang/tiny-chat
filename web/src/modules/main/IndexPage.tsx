@@ -78,7 +78,6 @@ export const IndexPage = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log('updated ', data);
           createMessage([
             {
               conversation_id: conversationId,

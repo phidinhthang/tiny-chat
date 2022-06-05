@@ -161,7 +161,6 @@ export const useMainWsHandler = () => {
       addListener(
         'message_deleted',
         (d: { messageId: string; conversationId: string; userId: string }) => {
-          console.log('message_deleted', d);
           updateQuery(['messages', d.conversationId], (messages) => {
             const message = messages.items.find((m) => m.id === d.messageId);
             if (message) {

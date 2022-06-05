@@ -127,7 +127,6 @@ export const InputController: React.FC<InputControllerProps> = ({
   const onGifSelect = React.useCallback(() => {
     if (typeof activeGifIndex === 'number') {
       const gif = queriedGifs[activeGifIndex];
-      console.log('gif selected ', gif);
       mutate([
         { content: gif.url, is_image: true, conversation_id: conversationId },
       ]);
@@ -418,9 +417,7 @@ export const InputController: React.FC<InputControllerProps> = ({
               onGifSelect();
               return;
             }
-            console.log('editor value ', value);
             const serializedValue = serialize(value);
-            console.log('serialized value ', serializedValue);
             if (!serializedValue.trim()) {
               runShake('#shaking-container');
               return;

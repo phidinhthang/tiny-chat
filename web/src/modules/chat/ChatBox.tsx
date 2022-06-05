@@ -32,7 +32,7 @@ const ChatBox = () => {
   const { data: paginatedMessages, isLoading } = useTypeSafeQuery(
     ['messages', conversationId! as string],
     { enabled: !!conversationId },
-    [conversationId as string, { limit: `${5}` }]
+    [conversationId as string, { limit: `${25}` }]
   );
   const { data: members } = useTypeSafeQuery(
     ['conversationMembers', conversationId as string],
@@ -75,7 +75,7 @@ const ChatBox = () => {
     if (inView && nextCursor) {
       wrap(fetcher)
         .query['messages'](conversationId as string, {
-          limit: `${10}`,
+          limit: `${25}`,
           after: nextCursor,
         })
         .then((res) => {

@@ -30,7 +30,6 @@ export const createFetcher = ({ url = baseUrl }: { url?: string }): Fetcher => {
       },
     });
 
-    console.log('response headers ', r.headers);
     const d = await r.json();
     accessToken = d.accessToken;
     setTokens({ accessToken, refreshToken });
